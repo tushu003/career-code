@@ -15,7 +15,10 @@ const Navbar = () => {
 
     const links=<>
         <li><NavLink to="/">Home</NavLink></li>
-        <li><a>Item 3</a></li>
+        {
+          user && <>
+          <li><NavLink to="/myApplications">My Applications</NavLink></li></>
+        }
         </>
     return (
         <div>
